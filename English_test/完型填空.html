@@ -1,0 +1,2932 @@
+<html><head>
+    <title></title>
+    <script src="/bundles/jquery?v=iAfF7w_9xk3YMliaOVPqpx8pALBmF-FTbrao0RIgp_U1"></script>
+
+    <script src="/Scripts/ExamJS/JRS.js" type="text/javascript"></script>
+    <style type="text/css">
+        /*整体试卷样式*/
+        body {
+            background-color: #E9F0F8;
+            margin: 0;
+            padding: 0;
+            font-size: small;
+            font-family: 微软雅黑, 'lucida grande', helvetica, verdana, arial, sans-serif;
+        }
+
+        a {
+            outline: none;
+        }
+
+        #dvExamInfo {
+            width: 100%;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+        /*试卷标题样式*/
+        #hTitle {
+            height: 88px;
+            background: url('../images/ExamImages/view_bg.png') repeat-x;
+            min-width: 740px;
+        }
+
+        #hTitle span {
+            margin-left: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            background: url('../images/ExamImages/xhbg.png') repeat;
+            line-height: 25px;
+            margin-top: 40px;
+            display: block;
+            width: auto;
+            float: left;
+            height: 25px;
+            padding: 0 10px;
+        }
+        /*加载中样式*/
+        #imgloading {
+            z-index: 10001;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+        }
+        /*取消超链接下划线*/
+        #dvExamInfo > a {
+            height: 40px;
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            background: url('../images/ExamImages/bancf.png') repeat-x 0 top;
+            margin-top: 11px;
+        }
+
+        #dvExamInfo > a > div {
+            width: 26px;
+            height: 16px;
+            float: right;
+            margin-right: 35px;
+            margin-top: 6px;
+            background: url('../images/ExamImages/jh.png') no-repeat;
+        }
+
+        #dvExamInfo > a > h3 {
+            height: 40px;
+            color: black;
+            padding-left: 20px;
+            background: url('../images/ExamImages/tbg.png') no-repeat 0 top;
+        }
+
+        .sQFaceInfo p {
+            padding: 0px 25px 0px 25px;
+            line-height: 2em;
+            text-indent: 2em;
+        }
+        /*偶数行样式*/
+        .EvenStyle {
+            width: 90%;
+            padding: 10px 25px 0 25px;
+            position: relative;
+            z-index: 0;
+            margin: 0 auto;
+        }
+
+        .EvenStyle > span, .sQFaceInfo > span {
+            display: block;
+            width: 86px;
+            height: 29px;
+            position: absolute;
+            left: 32px;
+            top: -6px;
+            color: black;
+            text-align: center;
+            font-size: 14px;
+            background: url('../images/ExamImages/view_an.png') no-repeat;
+        }
+        /*题干阅读文本缩进*/
+        .sQFaceInfo p {
+            margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .sectionDiv {
+            width: 100%;
+            position: relative;
+        }
+        /*小题标题样式*/
+        .childTitle {
+            font-size: 16px;
+        }
+
+        .childTitle span {
+            margin-left: 15px;
+        }
+
+        .childTitle p {
+            word-wrap: break-word;
+        }
+
+        .LineHeight {
+            margin-left: 25px;
+        }
+
+        @media print
+        {
+            #btnPrint { display: none; }
+            .sQFaceInfo, .sectionDiv { display: block; }
+        }
+    </style>
+</head>
+<body>
+    
+    <!--startprint-->
+    <div id="dvExamInfo">
+            <a href="javascript:void(0);">
+                <h3>一、完型填空</h3>
+            </a>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">“Mom, can I have some money?” Those are the words my mother used to hear all the time. In return, I heard, “ Why don't you get a job? Not to make me happy, but so that you have your own money and gain a bit more responsibility.” So last year I got a job working about 25 hours a week. For $5 an hour, working as a salesman in a photo studio.</p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">    <span>     </span>After I got this job, I had to do football, homework and job<span> </span>___21___. It was really hard for me. I was burning out, falling asleep at school and failing in many courses. My teachers were mad ___2<span>2</span>___ me and yelled at me: why have a job? I missed a lot practice in football team and could only ___2<span>3</span>___ back down at the match. My coach was cold at me with an unasked question: why have a job? I told them it was for the things I need, when actually it was for the things I wanted. Needing and wanting are different. Needing something is like your only shoes have holes in them. But wanting is to have every new brand sneaker just because you like it. I start to think about if I did a wrong thing. Slowly, I learnt to ___2<span>4</span>___ my money better so that I could have more time for school and football. I learnt to make a wise decision ___<span>25</span>___ <span>what I need and what I want.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        1、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、on     </p> <p></p>
+                            <p>B、manage         </p> <p></p>
+                            <p>C、sit         </p> <p></p>
+                            <p>D、at        </p> <p></p>
+                            <p>E、at the same time</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查介词词组。at the same time“同时”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        2、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、on     </p> <p></p>
+                            <p>B、manage         </p> <p></p>
+                            <p>C、sit         </p> <p></p>
+                            <p>D、at        </p> <p></p>
+                            <p>E、at the same time</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查形容词词组。be mad at sb.“对某人很生气”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        3、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、on     </p> <p></p>
+                            <p>B、manage         </p> <p></p>
+                            <p>C、sit         </p> <p></p>
+                            <p>D、at        </p> <p></p>
+                            <p>E、at the same time</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查动词词组。to sit back down at the match“在比赛中不能上场参赛，只能当板凳队员”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        4、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、on     </p> <p></p>
+                            <p>B、manage         </p> <p></p>
+                            <p>C、sit         </p> <p></p>
+                            <p>D、at        </p> <p></p>
+                            <p>E、at the same time</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查动宾搭配。to manage one’s money“理财”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        5、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、on     </p> <p></p>
+                            <p>B、manage         </p> <p></p>
+                            <p>C、sit         </p> <p></p>
+                            <p>D、at        </p> <p></p>
+                            <p>E、at the same time</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查动词词组。to make a wise decision on sth.“在某方面作出了明智的决定”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">A friend of mine, teaching abroad, was immensely amused by the question, “Are English peasants allowed to go to the theatre?” Anybody who can pay for a <span>___21___</span><span> </span>may go to the theatre in England, though only two percent choose to do so. This is not because theatres are expensive, <span>___2</span><span>2</span>___<span> </span><span>because most people prefer to watch television, football matches or to gamble.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">The word “peasant” is not used in England, except as an insult or as a joke. We have no peasant class, only <span>___2</span><span>3</span>___<span> </span>laborers. We do not have a system, as in other parts of Europe, <span>___2</span><span>4</span>___<span> </span>people inherit a small piece of <span>___2</span><span>5</span>___<span> </span>and work it for substance. We have farms, which can employ laborers for wages. Such people are <span>___2</span><span>6</span>___<span> </span>as “agricultural workers”. They are not highly paid out but they can manage to live fairly well.</p><p style="margin: 0px; font-family: Times New Roman;"><span style="font-family: Times New Roman;">    </span><span style="font-family: Times New Roman;">    </span><span style="font-family: Times New Roman;">Farming is becoming more </span><span style="font-family: Times New Roman;">___2</span><span style="font-family: Times New Roman;">7</span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;">. These days young men starting work on the farm are expected to spend some more time at agriculture college to learn how to do the job </span><span style="font-family: Times New Roman;">___2</span><span style="font-family: Times New Roman;">8</span><span style="font-family: Times New Roman;">___. English agriculture is very </span><span style="font-family: Times New Roman;">___2</span><span style="font-family: Times New Roman;">9</span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;"> </span><span style="font-family: Times New Roman;">and we are now self-sufficing in grain: </span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;">30</span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;">, we have a surplus, which is stored by the Common Market and which we have to pay to store, through our taxes.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        6、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、pound</p> <p></p>
+                            <p>B、dollar</p> <p></p>
+                            <p>C、time</p> <p></p>
+                            <p>D、ticket</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】考察对语境的理解。上文提出设问：英国允许农民进入剧院吗？接下来回答：任何买得起____都能进入剧院看戏。这里指的是买得起票的人都能看戏。选D。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        7、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、and</p> <p></p>
+                            <p>B、which</p> <p></p>
+                            <p>C、but</p> <p></p>
+                            <p>D、not</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察逻辑关系。not because ... but because ...“不是因为……，而是因为……”。选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        8、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、agricultural</p> <p></p>
+                            <p>B、industrial</p> <p></p>
+                            <p>C、business</p> <p></p>
+                            <p>D、social</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察对文章主题的理解。这篇文章主要谈论的是农民以及提到农民的几种说法。在英国，peasant仅仅在侮辱或玩笑场合中才被用到，往往用agricultural laborers来表示“农业劳动者”，选A。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        9、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、however</p> <p></p>
+                            <p>B、where</p> <p></p>
+                            <p>C、there</p> <p></p>
+                            <p>D、which</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察关系副词。Europe在定语从句中做地点状语，因此关系副词用where，选B。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        10、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、earth</p> <p></p>
+                            <p>B、land</p> <p></p>
+                            <p>C、farm</p> <p></p>
+                            <p>D、soil</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察固定搭配。inherit a small piece of land，继承一小块土地，选B。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        11、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、respected</p> <p></p>
+                            <p>B、organized</p> <p></p>
+                            <p>C、gathered</p> <p></p>
+                            <p>D、regarded</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】考察固定搭配。be regarded as ....，“被看做”，选D。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        12、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、advance</p> <p></p>
+                            <p>B、popular</p> <p></p>
+                            <p>C、scientific</p> <p></p>
+                            <p>D、accessible</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察对语境的理解，应结合第28题进行分析，应先解答28题，才能做出本题的答案。下文说，如今准备去农场工作的年轻人，都要在农学院里学习较长一段时间，学习如何把农场工作做好。由此可见，经营农业变得比以往更加科学了，选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        13、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、good</p> <p></p>
+                            <p>B、accordingly</p> <p></p>
+                            <p>C、properly</p> <p></p>
+                            <p>D、correct</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察词性。这里应选择一个副词来修饰动词do，因此可以排除A和D选项。而根据文意来看，在B选项和C选项里，只有C选项表示“做好工作”的含义，选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        14、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、efficient</p> <p></p>
+                            <p>B、self-contained</p> <p></p>
+                            <p>C、independent</p> <p></p>
+                            <p>D、producing</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察词义辨析。连词and在文中用来表示自然产生的结果，这里指因为英国的农业___，所以粮食能够自给自足。A选项为“效益好的”，B选项为“有独立设施的”，C选项为“独立的”，D选项的形式不对。只有A选项表达了粮食自给自足的原因，选A。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        15、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Virtually</p> <p></p>
+                            <p>B、In fact</p> <p></p>
+                            <p>C、On the contrary</p> <p></p>
+                            <p>D、By the way</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察逻辑关系。上文说英国的农业可以自给自足，下文说还有盈余供储藏，两者之间是递进的关系，选B。in fact，有“其实，说得更准确些，进一步说明”的意思。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 1px 1px 1px 0px; text-indent: 20px;"><span style="font-family: Times New Roman;">It's very interesting to study names of different countries. Chinese names are different ___21___ foreign names. Once an English lady came to visit me. When I was introduced to her, she said, “Glad to meet you, Miss Ping.” Then she gave me her name card with three words on it: “Betty J. Black”. So I said, “Thank you, Miss Betty.”</span><span style="font-family: Times New Roman;"> </span><span style="font-family: Times New Roman;">We looked at each other and laughed heartily. Later I found that the English people ___22___ their family names last and the given names first, while their middles are not used very much. I explained to her that the Chinese family name comes first, the given name last, so she ___23___ never call me Miss Ping. She asked if we Chinese had a middle name. I told her we didn't. But people may often find three words on a Chinese name card. In this case the family name still comes first, and the other words after it ___24___ a two-word given name. It is quite usual in China. My sister is Li Xiaofang. She has two words in her given name instead ___25___ just one like mine.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        16、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、put</p> <p></p>
+                            <p>B、from</p> <p></p>
+                            <p>C、should    </p> <p></p>
+                            <p>D、of</p> <p></p>
+                            <p>E、are</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查形容词词组。be different from... “......与......不同”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        17、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、put</p> <p></p>
+                            <p>B、from</p> <p></p>
+                            <p>C、should   </p> <p></p>
+                            <p>D、of</p> <p></p>
+                            <p>E、are</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查动宾搭配。to put their family names last“把姓写在后面”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        18、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、put</p> <p></p>
+                            <p>B、from</p> <p></p>
+                            <p>C、should</p> <p></p>
+                            <p>D、of</p> <p></p>
+                            <p>E、are</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查should 表示一种强烈的建议。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        19、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、put</p> <p></p>
+                            <p>B、from</p> <p></p>
+                            <p>C、should</p> <p></p>
+                            <p>D、of</p> <p></p>
+                            <p>E、are</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查主谓一致关系的用法。此句的主语是words, 复数主语要跟are。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        20、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、put</p> <p></p>
+                            <p>B、from</p> <p></p>
+                            <p>C、should</p> <p></p>
+                            <p>D、of</p> <p></p>
+                            <p>E、are</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查副词词组。instead of + n. “而不是”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">One day a woman got into her car and started driving home after work. Suddenly, she saw a yellow car behind her. The driver was a man. When she turned left, the yellow car turned left. When she turned right, the yellow car turned right, ___2<span>1</span>___. When she stopped at the traffic lights, the yellow car stopped ___2<span>2</span>___ her. The woman was afraid, so she drove quickly to the police station. She was very <span>surprised </span>when she found the car stopped behind her. At that time, a young man was standing outside the police station. The woman was very happy to see him. She knew that he was a policeman because he was ___2<span>3</span>___ a police uniform. She jumped out of her car and ran to the policeman. She asked him to arrest the man in the yellow car, so the policeman walked to the man. </p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">The man didn't try to run<span> </span>___24___ when he saw the policeman. He just smiled and said to the woman, <span>“</span>I want to give this purse back to you, madam. I think you ___2<span>5</span>___ it on the street.<span>”</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        21、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、wearing</p> <p></p>
+                            <p>B、behind         </p> <p></p>
+                            <p>C、too         </p> <p></p>
+                            <p>D、dropped         </p> <p></p>
+                            <p>E、away</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查副词too的用法。too“也，还，而且”，仅用于肯定句；在否定句中用either。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        22、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、wearing</p> <p></p>
+                            <p>B、behind         </p> <p></p>
+                            <p>C、too         </p> <p></p>
+                            <p>D、dropped         </p> <p></p>
+                            <p>E、away</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查介词behind的用法。译文：当她碰到红灯停车时，（她发现）那一辆黄车就停在她后面。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        23、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、wearing</p> <p></p>
+                            <p>B、behind         </p> <p></p>
+                            <p>C、too         </p> <p></p>
+                            <p>D、dropped         </p> <p></p>
+                            <p>E、away</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查动宾搭配。to wear a police uniform“穿着警服”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        24、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、wearing</p> <p></p>
+                            <p>B、behind         </p> <p></p>
+                            <p>C、too         </p> <p></p>
+                            <p>D、dropped         </p> <p></p>
+                            <p>E、away</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查动词词组。to run away“逃跑”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        25、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、wearing</p> <p></p>
+                            <p>B、behind         </p> <p></p>
+                            <p>C、too         </p> <p></p>
+                            <p>D、dropped         </p> <p></p>
+                            <p>E、away</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查动宾搭配。dropped the purse on the street“把钱包掉在马路上了”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Last night, a fire broke out in Ann's house in Manchester.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Ann's parents were out of town for the weekend when something wrong in the room caused the fire to start in the middle of the night. The girl was <span>___21___</span> up by the family dog, Danny, who was barking loudly in the back garden. Ann smelled something burning. She <span>___22___</span> <span>up and at once ran through the smoke-filled house to wake her old brother, Frank.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">When Frank would not wake up, Ann got some help from the dog. Frank's unconscious body was far <span>___23___</span> heavy for the little girl to move alone , but the clever girl brought the dog inside and  <span>___24___</span> the dog's leash<span style="font-family: Times New Roman;">（牵狗的皮带）</span><span>to Frank's left ankle. She then held her brother's right ankle, and together the girl and the dog </span><span>___25___</span> Frank to safety.</p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;"><span>The 10-year-old girl, Ann, saved her big brother from death.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        26、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、too</p> <p></p>
+                            <p>B、got</p> <p></p>
+                            <p>C、waken </p> <p></p>
+                            <p>D、pulled </p> <p></p>
+                            <p>E、tied</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查动词词组。be waken up by sb./sth. “被某人/某事吵醒”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        27、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、too</p> <p></p>
+                            <p>B、got</p> <p></p>
+                            <p>C、waken </p> <p></p>
+                            <p>D、pulled </p> <p></p>
+                            <p>E、tied</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查动词词组。to get up“起床”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        28、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、too</p> <p></p>
+                            <p>B、got</p> <p></p>
+                            <p>C、waken </p> <p></p>
+                            <p>D、pulled </p> <p></p>
+                            <p>E、tied</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查too +adj. for sb to do sth.句子结构。“对某人来说太……，以至于难以做某事”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        29、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、too</p> <p></p>
+                            <p>B、got</p> <p></p>
+                            <p>C、waken </p> <p></p>
+                            <p>D、pulled </p> <p></p>
+                            <p>E、tied</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查动词搭配。to tie sb./sth./ to…“把某人/某事栓在……”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        30、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、too</p> <p></p>
+                            <p>B、got</p> <p></p>
+                            <p>C、waken </p> <p></p>
+                            <p>D、pulled </p> <p></p>
+                            <p>E、tied</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查动词搭配。to pull sb. to safety “把某人拖到安全处”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">The human nose is an underrated tool. Humans are often thought to be insensitive smellers compared with animals, but this is largely because, ___21___ animals, we stand upright. This means that our noses are limited to perceiving those smells that float through the air, ___22___ the majority of smells which stick to surfaces. In fact though, we are extremely sensitive to smells, ___23___we do not generally realize it. Our noses are capable of detecting human smells even when these are ___24___ to far below one part in one million.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">Strangely, some people find that they can smell one type of flower but not another, whereas others are sensitive to the smells of both flowers. This may be because some people do not have the genes necessary to generate ___25___ smell receptors in the nose. These receptors are the cells which sense smells and send messages to the brain. However, it has been found that even people insensitive to a certain smell ___26___ can suddenly become sensitive to it when exposed to it often enough.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">The explanation for insensitivity to smell seems to be that brain finds it ___27___ to keep all smell receptors working all the time but can create new receptors if necessary. This may ___28___explain why we are not usually sensitive to our own smells we simply do not need to be. We are not aware of the usual smell of our own house but we ___29___ new smells when we visit someone else's. The brain finds it best to keep smell receptors available for unfamiliar and emergency signals ___30___ the smell of smoke, which might indicate the danger of fire.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        31、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、above</p> <p></p>
+                            <p>B、unlike</p> <p></p>
+                            <p>C、excluding </p> <p></p>
+                            <p>D、besides</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】这里的意思是，“不像…”，故选B。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        32、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、catching </p> <p></p>
+                            <p>B、ignoring </p> <p></p>
+                            <p>C、missing </p> <p></p>
+                            <p>D、tracking</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】catch：抓住；ignore：忽视；miss：错过；track：追踪，故选C。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        33、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、even if </p> <p></p>
+                            <p>B、if only </p> <p></p>
+                            <p>C、only if </p> <p></p>
+                            <p>D、as if</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】这里是一个让步状语从句，意为“即使我们没有意识到…”，因此这道题应该选择A。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        34、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、diluted </p> <p></p>
+                            <p>B、dissolved </p> <p></p>
+                            <p>C、determining</p> <p></p>
+                            <p>D、diffused</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】dilute：稀释，冲淡；dissolve：溶解；determine：决定；diffuse：扩散（气体、液体等），使弥漫，故选A。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        35、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、unusual </p> <p></p>
+                            <p>B、particular </p> <p></p>
+                            <p>C、unique </p> <p></p>
+                            <p>D、typical</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】unusual：不同寻常的；particular：特定的；unique：独一无二的；typical：典型的，故选B。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        36、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、at first </p> <p></p>
+                            <p>B、at all </p> <p></p>
+                            <p>C、at large </p> <p></p>
+                            <p>D、at times</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】这句话的意思是：即使刚开始时对这种味道不敏感，但经常闻到后也会对此敏感，在四个选项中只有at first表示“起初，刚开始”，故选A。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        37、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、ineffective  </p> <p></p>
+                            <p>B、incompetent </p> <p></p>
+                            <p>C、inefficient</p> <p></p>
+                            <p>D、insufficient</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】这里表示人的大脑不能有效的保持所有的嗅觉器官同时工作，因此这道题应该选择C。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        38、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、still </p> <p></p>
+                            <p>B、also </p> <p></p>
+                            <p>C、otherwise </p> <p></p>
+                            <p>D、nevertheless</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】这里用also表示“也能”，故选B。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        39、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、tolerate </p> <p></p>
+                            <p>B、repel </p> <p></p>
+                            <p>C、neglect </p> <p></p>
+                            <p>D、notice</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】tolerate：忍受；repel：击退，驱逐；neglect：忽略；notice：注意到，故选D。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        40、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、similar to</p> <p></p>
+                            <p>B、such as </p> <p></p>
+                            <p>C、along with </p> <p></p>
+                            <p>D、aside from</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】similar to：与……相近；such as：例如；along with：与……一起；aside from：除……以外，故选B。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p><span style="font-family: Times New Roman;">        </span><span style="font-family: Times New Roman;">Life involves making decisions and changes. Decisions and changes involve making moves, getting ___21___ one position or spot in life to another. An effective move involves planning a route and ___22___ to it. Whenever you travel, you have the choice of several routes. Some routes of living are ___23___ and helpful. Others are negative, creating depression and despair. Knowing ___24___</span><span style="font-family: Times New Roman; font-weight: bold;"> </span><span style="font-family: Times New Roman;">to re-route yourself from negative outlooks, thoughts, or ideas is ___25___ for getting where you want to go in life. It is easy to think negatively about others or about ___26___</span><span style="font-family: Times New Roman;">.</span><span style="font-family: Times New Roman; font-weight: bold;"> </span><span style="font-family: Times New Roman;">If you allow these thoughts to continue unchecked, they develop into ruts (</span><span style="font-family: Times New Roman; font-style: italic;">Note: old habits</span><span style="font-family: Times New Roman;">) of ___27___</span><span style="font-family: Times New Roman;">.</span><span style="font-family: Times New Roman; font-weight: bold;"> </span><span style="font-family: Times New Roman;">What should you do then? Well, you can say to yourself “Stop!” and refuse to ___28___</span><span style="font-family: Times New Roman; font-weight: bold;"> </span><span style="font-family: Times New Roman;">or believe those negative things you are saying to yourself. By refusing to let a repeating negative thought lead you to frustration, anger or depression, you avoid ___29___ in a rut. Instead of continuing to be worn down by a rutted track of negative and destructive thinking, you can consciously and ___30___ switch yourself or side-track yourself onto a path of more positive thinking. </span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        41、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、on</p> <p></p>
+                            <p>B、in</p> <p></p>
+                            <p>C、from</p> <p></p>
+                            <p>D、at</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】考点：词语搭配：from…to 从…到。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        42、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、to keep</p> <p></p>
+                            <p>B、keeps</p> <p></p>
+                            <p>C、keeping</p> <p></p>
+                            <p>D、kept</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】考点：词语搭配：keep to 遵循； keeping在形式上应与planning一致。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        43、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、popular</p> <p></p>
+                            <p>B、possible</p> <p></p>
+                            <p>C、powerful</p> <p></p>
+                            <p>D、positive</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】考点：positive 积极的，主动的，与后一个句之中negative说明正反两种现象。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        44、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、what</p> <p></p>
+                            <p>B、how</p> <p></p>
+                            <p>C、whether</p> <p></p>
+                            <p>D、that</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】 考点：know how to 怎样做。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        45、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、crucial</p> <p></p>
+                            <p>B、necessary</p> <p></p>
+                            <p>C、possible</p> <p></p>
+                            <p>D、classical</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】 考点：crucial 关键性的；necessary 必须的；possible 可能的； classical 古典的。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        46、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、himself</p> <p></p>
+                            <p>B、themselves</p> <p></p>
+                            <p>C、yourselves</p> <p></p>
+                            <p>D、myself</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】考点：与or之前others的应用。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        47、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、despair</p> <p></p>
+                            <p>B、desire</p> <p></p>
+                            <p>C、decision</p> <p></p>
+                            <p>D、desperate</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】 考点：词语辨析。despair 名词， 绝望；desire 渴望；decision 决定；desperate 绝望的，形容词。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        48、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、receive</p> <p></p>
+                            <p>B、acquire</p> <p></p>
+                            <p>C、admit</p> <p></p>
+                            <p>D、accept </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】考点：词语辨析：receive （没有选择）接受；accept （选择的）接受。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        49、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、to be caught</p> <p></p>
+                            <p>B、be caught</p> <p></p>
+                            <p>C、being caught</p> <p></p>
+                            <p>D、catching</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】考点：根据句意，该句考核的是“被动语态”及“avoid doing”结构。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        50、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、purposely</p> <p></p>
+                            <p>B、purpose</p> <p></p>
+                            <p>C、purposing</p> <p></p>
+                            <p>D、purposed</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】考点：根据上下文，这里需要副词。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">The United States is well-known for its network ___21___ major highways designed to help a driver get from one place to another in the ___22___ possible time. However, large highways often pass ___23___ scenic areas and interesting small towns. Furthermore, these highways generally connect large urban centers</span><span>,</span><span style="font-family: Times New Roman;"> ___24___ means that they become crowded with heavy traffic during rush hours, ___25___ the "fast direct" way becomes a very slow route. </span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>However, there is always another route to take ___26___ you are not in a hurry. Not far from the relatively new "superhighways", there are often older, less heavily traveled roads which go through the countryside. ___27___ of these are good two-lane roads; others are uneven roads curving through the country. These secondary routes may go up steep slopes, along high ___28___, or down frightening hillsides to towns ___29___ in deep valleys. Through these less direct routes, longer and slower, they generally go to places where the air is clean and the scenery is beautiful, and the driver may have a chance to get a fresh, clean ___30___ of the world.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        51、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、of </p> <p></p>
+                            <p>B、on</p> <p></p>
+                            <p>C、about</p> <p></p>
+                            <p>D、in</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】固定搭配。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        52、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、short</p> <p></p>
+                            <p>B、shorter</p> <p></p>
+                            <p>C、shortening</p> <p></p>
+                            <p>D、shortest</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】因为前面有the，所以此处用形容词最高级shortest最合适。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        53、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、to</p> <p></p>
+                            <p>B、into</p> <p></p>
+                            <p>C、over</p> <p></p>
+                            <p>D、by</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】固定搭配：pass by 经过。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        54、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、which</p> <p></p>
+                            <p>B、that</p> <p></p>
+                            <p>C、as</p> <p></p>
+                            <p>D、what</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】which引导非限制性定语从句。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        55、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、when</p> <p></p>
+                            <p>B、for</p> <p></p>
+                            <p>C、but</p> <p></p>
+                            <p>D、that</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】根据上下文，时间状语从句。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        56、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、unless</p> <p></p>
+                            <p>B、if</p> <p></p>
+                            <p>C、as</p> <p></p>
+                            <p>D、since</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】根据上下文，条件从句。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        57、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、All</p> <p></p>
+                            <p>B、Several</p> <p></p>
+                            <p>C、Lots</p> <p></p>
+                            <p>D、Some</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】与下文的others形成some… others的搭配。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        58、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、rocks</p> <p></p>
+                            <p>B、cliffs</p> <p></p>
+                            <p>C、roads</p> <p></p>
+                            <p>D、paths</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】 rocks 岩石，cliff 悬崖；road 道路；path 小径。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        59、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、lying</p> <p></p>
+                            <p>B、laying</p> <p></p>
+                            <p>C、laid</p> <p></p>
+                            <p>D、lied</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】固定搭配：lie in 位于，坐落于，这里用其现在分词形式lying，作后置定语。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        60、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、view</p> <p></p>
+                            <p>B、variety</p> <p></p>
+                            <p>C、visit</p> <p></p>
+                            <p>D、virtue</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】view 景象；variety 多样化；visit 参观；virtue 美德。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Many students find the experience of attending university lectures to be a confusing and frustrating experience. The lecturer speaks for one or two hours, perhaps </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___21___ </span><span>the talk with slides, writing up important information on the blackboard, distributing reading material and giving out assignment. The new student sees the other students continuously writing on notebooks and wonders what to write. Very often the student leaves the lecture with notes which do not catch the main points and</span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;"> ___22___ </span><span>become hard even for the students to understand. </span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Most institutions provide courses which assist new students to develop the skills they need to be effective listeners and note-takers. If these are unavailable, there are many useful study-skills guides which</span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;"> ___23___ </span><span>enable learners to practice these skills independently. In all cases it is important to</span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;"> ___24___ </span><span>the problem before actually starting your studies.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>It is important to acknowledge that most students have difficulty in acquiring the language skills required in college study. One way of </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___25___ </span><span>these difficulties is to attend the language and study-skills classes which most institutions provide throughout the academic year. Another basic strategy is to find a study partner with whom it is possible to identify difficulties, exchange ideas and provide support.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        61、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、which       </p> <p></p>
+                            <p>B、enable       </p> <p></p>
+                            <p>C、overcoming        </p> <p></p>
+                            <p>D、tackle       </p> <p></p>
+                            <p>E、illustrating</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查现在分词作状语。译文：老师会花一两个小时用幻灯来解释讲课的内容，写出一些重要的信息，发放一些阅读材料，布置作业。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        62、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、which       </p> <p></p>
+                            <p>B、enable       </p> <p></p>
+                            <p>C、overcoming        </p> <p></p>
+                            <p>D、tackle       </p> <p></p>
+                            <p>E、illustrating</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】 A 【解析】 考查并列句的连接词。并列的两个部分是which do not catch the main points and which become hard even for the students to understand.
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        63、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、which       </p> <p></p>
+                            <p>B、enable       </p> <p></p>
+                            <p>C、overcoming        </p> <p></p>
+                            <p>D、tackle       </p> <p></p>
+                            <p>E、illustrating</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查动词 enable 的用法。to enable sb. to do sth.“使人能够干某事”。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        64、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、which       </p> <p></p>
+                            <p>B、enable       </p> <p></p>
+                            <p>C、overcoming        </p> <p></p>
+                            <p>D、tackle       </p> <p></p>
+                            <p>E、illustrating</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查动宾搭配。to tackle a problem“解决问题”。译文：通常学生在开始学习之前就应该解决这种听课技能的问题。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        65、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、which       </p> <p></p>
+                            <p>B、enable       </p> <p></p>
+                            <p>C、overcoming        </p> <p></p>
+                            <p>D、tackle       </p> <p></p>
+                            <p>E、illustrating</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查固定搭配。to have difficulty in doing sth. “做某事有困难”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Throughout history man has had to accept the fact that all living things must die, but people now live longer than they <span>___21___</span>. Yet, all living things still show the <span>___2</span><span>2</span>___<span> </span>of aging, which will eventually <span>___2</span><span>3</span>___<span> </span><span>death.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Aging is not a disease, but as a person passes maturity, the cells of the body and the organs they form do not function as well as they did in childhood. The body provides less <span>___2</span><span>4</span>___<span> </span>against diseases and is more inclined <span>___2</span><span>5</span>___<span> </span><span>accident.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">A number of related causes may contribute to aging. Some cells of the body have a fairly long life, but they are not <span>___2</span><span>6</span>___<span> </span>when they die. In an aging person the new cells may not be as capable <span>___2</span><span>7</span>___<span> </span><span>growth as those of a young person.</span></p><p style="margin: 0px; font-family: Times New Roman;"><span style="font-family: Times New Roman;">    </span><span style="font-family: Times New Roman;">   </span><span style="font-family: Times New Roman;">Another </span><span style="font-family: Times New Roman;">___2</span><span style="font-family: Times New Roman;">8</span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;"> </span><span style="font-family: Times New Roman;">in aging may be changes within the cells themselves. Some of the protein chemicals in cells are known to change with age and become less flexible. This is why the skin of old people wrinkles. This is also the reason old people </span><span style="font-family: Times New Roman;">___2</span><span style="font-family: Times New Roman;">9</span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;"> </span><span style="font-family: Times New Roman;">in height. There may be other more important chemicals changes in the cells. Some complex cell chemicals, such as DNA and RNA, store and </span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;">30</span><span style="font-family: Times New Roman;">___</span><span style="font-family: Times New Roman;"> </span><span style="font-family: Times New Roman;">information that the cells need. Aging may affect this process and change the information-carrying molecules so that they do not transmit the information as well.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        66、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、had</p> <p></p>
+                            <p>B、use to</p> <p></p>
+                            <p>C、were used to</p> <p></p>
+                            <p>D、used to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】考察固定搭配。used to do something，“过去常常”，用来表达过去经常发生的事情、习惯或状态。be used to do something，“被用来做某事”，是use的被动结构。文中指出，人们现在比过去活的时间更久了，表达的是过去与现在的状态比较，选D。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        67、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、fact</p> <p></p>
+                            <p>B、effect</p> <p></p>
+                            <p>C、function</p> <p></p>
+                            <p>D、symbol</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察词汇辨析。“然而，一切生物都显示出衰老的____。”age表示“衰老”，A选项为“事实”，B选项为“影响”，C选项为“功能”，D选项为“符号”。符合文意的选项为B。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        68、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、affect</p> <p></p>
+                            <p>B、produce</p> <p></p>
+                            <p>C、result in</p> <p></p>
+                            <p>D、result from   </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察逻辑关系。这里考察文中所表达的衰老与死亡之间的关系，衰老的结果是死亡，C选项和D选项都表示因果关系，但C选项表示“导致某结果”，D选项表示“出自某原因”，根据文意选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        69、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、protection</p> <p></p>
+                            <p>B、demand</p> <p></p>
+                            <p>C、decline</p> <p></p>
+                            <p>D、delay</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察对语境的理解和词义辨析。本段说，衰老不是一种病，而是人体在成熟之后细胞与器官的运转每况愈下，人体为抵抗疾病提供的____更少。A选项为“保护”，B选项为“要求”，C选项为“下降”，D选项为“延迟”。根据文意选A。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        70、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、to</p> <p></p>
+                            <p>B、for</p> <p></p>
+                            <p>C、against</p> <p></p>
+                            <p>D、from</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察固定搭配。be inclined to something，“倾向于，更有可能（出现某情况）”，选A。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        71、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、replaced</p> <p></p>
+                            <p>B、born</p> <p></p>
+                            <p>C、recovered</p> <p></p>
+                            <p>D、discovered</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察对语境的理解和词义辨析，应结合第27题进行分析。要先做出27题，才能解答该题。该段说，有许多问题导致了衰老，人体的一些细胞寿命较长，但是在这些细胞死亡的时候，没有得到____。下文进一步解释，老年人不能像年轻人那样，生长出新细胞来。结合上下文，该题应该选择A，表示“替换，更新”，即旧细胞死亡时无法得到更新。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        72、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、with</p> <p></p>
+                            <p>B、for</p> <p></p>
+                            <p>C、of</p> <p></p>
+                            <p>D、to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察固定搭配。be capable of something，“能够，有能力”，选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        73、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、factor</p> <p></p>
+                            <p>B、effect</p> <p></p>
+                            <p>C、reason</p> <p></p>
+                            <p>D、element</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察对语境的理解与固定搭配。上段讲的是造成衰老的一个原因，即细胞死亡后无法得到更新，这段提到另一个造成衰老的原因是细胞自身的变化。A选项和C选项都可以表示原因，但A选项factor常与in搭配使用，C选项reason常与of搭配。选A。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        74、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、short</p> <p></p>
+                            <p>B、shrink</p> <p></p>
+                            <p>C、lengthen</p> <p></p>
+                            <p>D、increase</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察对语境的理解和词性。上文说，细胞里的一些蛋白化学物质会随衰老发生变化，变得缺少弹性，这就是为什么老年人的皮肤会出现皱纹。“这也是老年人身高____的原因。”应表达身高变矮、缩水，A选项和B选项都可以表示该含义，但此处应填一个动词，而A选项short是形容词，因此选B。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        75、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、pass to</p> <p></p>
+                            <p>B、pass from</p> <p></p>
+                            <p>C、pass on</p> <p></p>
+                            <p>D、pass on to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察词组辨析。pass to，“传递给”，pass from，“从……传来”，pass on，“传递”；pass on to，“传递给”。文中说一些复杂的细胞化学成分储存并传递信息。选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">More and more teachers and parents have noticed another kind of pollution, </span><span style="font-family: Times New Roman;">which</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">came from the printed papers sold on streets.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">These printed things look like newspaper but have hardly anything to do with them. You can only find reading materials badly </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___21___ </span><span style="font-family: Times New Roman;">there</span><span style="font-family: Times New Roman;">. S</span><span style="font-family: Times New Roman;">ome are too strange for anyone to believe, </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___22___ </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">are frightening stories of something even worse. However, many of the young students are getting absorbed in such poisonous reading, which costs them what they should pay for their breakfast and bring them nightmares and immoral ideas in return. Homework is left undone, daily games lost.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">These sellers shout on streets selling their papers well. The writers, publishers and printers, </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___23___ </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">they are, we never know, are making their silent money. The sheep skinned wolf</span><span style="font-family: Times New Roman;">’</span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">s stories seem to have been forgotten once again.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">Why not forbid this kind of things at school? Yes, both teachers and parents have ask</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">each other for more strict control of the young readers. Yet unfortunately, </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___24___ </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">you want to forbid it, the more they want to have a look at it. Sometimes you may even find several children share one patched paper, which has traveled from one hand to another</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">driven by the curious nature.</span></p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;"><span style="color: rgb(0, 0, 0);">It really does harm to our society. It has already formed a sort of moral pollution. The </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___25___ </span><span style="color: rgb(0, 0, 0);">teachers and parents need more powerful support. Meanwhile, the young readers need more interesting books to help them get rid of these ugly papers.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        76、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、others</p> <p></p>
+                            <p>B、made up</p> <p></p>
+                            <p>C、worried      </p> <p></p>
+                            <p>D、whoever        </p> <p></p>
+                            <p>E、the more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查made up 过去分词短语作宾语补足语的用法。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        77、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、others</p> <p></p>
+                            <p>B、made up</p> <p></p>
+                            <p>C、worried      </p> <p></p>
+                            <p>D、whoever        </p> <p></p>
+                            <p>E、the more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A 【解析】考查代词的固定搭配。some… , others… “一些…….，还有一些…….”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        78、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、others</p> <p></p>
+                            <p>B、made up</p> <p></p>
+                            <p>C、worried      </p> <p></p>
+                            <p>D、whoever        </p> <p></p>
+                            <p>E、the more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查定语从句中whoever用作关系代词，引导做定语从句的宾语。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        79、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、others</p> <p></p>
+                            <p>B、made up</p> <p></p>
+                            <p>C、worried      </p> <p></p>
+                            <p>D、whoever        </p> <p></p>
+                            <p>E、the more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查比较级句型。the more…the more…“越……越……”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        80、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、others</p> <p></p>
+                            <p>B、made up</p> <p></p>
+                            <p>C、worried      </p> <p></p>
+                            <p>D、whoever        </p> <p></p>
+                            <p>E、the more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查形容词worried作定语。“担忧的老师和家长们”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">It is always interesting to visit another country, especially for those who have never traveled a great deal. Foreign ___21___ can be very educational for anyone if he is interested enough to make preparations beforehand. Learning the language of the new country would be difficult for the traveler, ___22___ the benefits of such an effort would become obvious immediately on his arrival. It may not seem important to him when he comfortably stays at home, but knowing how to order<span> </span>a meal or book a room is necessary for the newcomer in a strange country. Without knowing the language, it is very difficult ___23___<span>the stranger to understand the people of the new country and their customs.</span></p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">Of course, in our small world it is often possible to find someone who understands our own, but this is only second-best for the traveler. To be sure, he can see places and things without the use of a language, but places and things ___24___ not the heart of any country. To get the greatest  benefit from a trip ___25___<span> </span>another country, it is how important for the visitor to have an understanding of the language.</p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        81、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、travel</p> <p></p>
+                            <p>B、are</p> <p></p>
+                            <p>C、for         </p> <p></p>
+                            <p>D、but         </p> <p></p>
+                            <p>E、to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】转换理解题。短文第一句中的真正的主语to visit another country与A选项foreign travel同义。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        82、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、travel</p> <p></p>
+                            <p>B、are</p> <p></p>
+                            <p>C、for         </p> <p></p>
+                            <p>D、but         </p> <p></p>
+                            <p>E、to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查句与句之间的逻辑关系。这个并列句只有用转折连接词but连接才符合句意，即“对游客来说，学习他国的语言将是很困难的；但是，他为学好这门语言所付出的努力在他一踏上这个国土就能体会到了” 。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        83、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、travel</p> <p></p>
+                            <p>B、are</p> <p></p>
+                            <p>C、for         </p> <p></p>
+                            <p>D、but         </p> <p></p>
+                            <p>E、to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查句型。It is +adj. for sb. to do sth.“对某人来说做某事……”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        84、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、travel</p> <p></p>
+                            <p>B、are</p> <p></p>
+                            <p>C、for         </p> <p></p>
+                            <p>D、but         </p> <p></p>
+                            <p>E、to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查主谓一致。Places and things作为主语是复数，同时是一般现在时态，所以B选项正确。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        85、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、travel</p> <p></p>
+                            <p>B、are</p> <p></p>
+                            <p>C、for         </p> <p></p>
+                            <p>D、but         </p> <p></p>
+                            <p>E、to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查词组搭配。a trip to +地点“到某地去旅行”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Eagle has the longest life-span of its’ species. Eagle can ___21___ up to 70 years, but to reach this age, the Eagle must make a hard decision.</p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span> In it's 40’s, its’ long and flexible talons (</span><span style="font-family: Times New Roman;">爪</span><span>) can no longer grab prey (</span><span style="font-family: Times New Roman;">掠食</span><span>) which serve as food, its' long and sharp beak (</span><span style="font-family: Times New Roman;">鸟嘴</span><span>, </span><span style="font-family: Times New Roman;">喙</span>) becomes bent. Its’ old-aged and heavy wings, due to their thick feathers, become stuck to its’ chest and make it ___22___ to fly. Then Eagle is left with only two options: die or go through a painful process of change which lasts 150 days for survival.</p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">The process requires that Eagle fly to a mountain top and sit on its’ nest. There the Eagle knocks its' beak ___23___ a rock until it plucks (<span style="font-family: Times New Roman;">拔去</span>) it out. After plucking it out, Eagle will wait for a new beak to grow back. When its’ new talons grow back, the eagle starts plucking its' old-aged feathers and after five months, eagle can take its' flight of rebirth and lives for thirty ___24___ years.</p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">Many times, in order to survive, we have to start a change process. We sometimes need to ___25___ old memories, habits and other past traditions. Only freed from past burdens, can we take advantage of the present. </p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        86、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、against    </p> <p></p>
+                            <p>B、difficult</p> <p></p>
+                            <p>C、get rid of         </p> <p></p>
+                            <p>D、live         </p> <p></p>
+                            <p>E、more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查动词词组。to live up to“活到……岁数”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        87、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、against    </p> <p></p>
+                            <p>B、difficult</p> <p></p>
+                            <p>C、get rid of         </p> <p></p>
+                            <p>D、live         </p> <p></p>
+                            <p>E、more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查固定词组搭配用法。to make it difficult to fly“使它难以飞翔”。译文：由于羽毛长得又浓又厚，老化和笨重的翅膀碰到胸膛，使它难以飞翔。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        88、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、against    </p> <p></p>
+                            <p>B、difficult</p> <p></p>
+                            <p>C、get rid of         </p> <p></p>
+                            <p>D、live         </p> <p></p>
+                            <p>E、more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查介词against与动词搭配的用法。to knocks its' beak against a rock“用它的喙击打岩石”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        89、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、against    </p> <p></p>
+                            <p>B、difficult</p> <p></p>
+                            <p>C、get rid of         </p> <p></p>
+                            <p>D、live         </p> <p></p>
+                            <p>E、more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查比较级的用法。因year 是可数名词，故用more修饰。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        90、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、against    </p> <p></p>
+                            <p>B、difficult</p> <p></p>
+                            <p>C、get rid of         </p> <p></p>
+                            <p>D、live         </p> <p></p>
+                            <p>E、more</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查动词词组。to get rid of“摆脱，摒弃”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p><span style="font-family: Times New Roman;">      </span><span style="font-family: Times New Roman;">It is believed that the responsibilities for learning lie with the students.  The </span><span style="font-family: Times New Roman;">___21___</span><span style="font-family: Times New Roman;"> student is considered to be one who is motivated to learn for the sake of ___22___, not the one interested only in getting high grades. Sometimes homework is returned </span><span style="font-family: Times New Roman;">___23___</span><span style="font-family: Times New Roman;"> brief written comments but without a grade. Even if a grade is not given, the student is </span><span style="font-family: Times New Roman;">___24___</span><span style="font-family: Times New Roman;"> for learning the material assigned. When research is assigned, the professor expects the students to take it actively and complete it with minimum guidance. It is the </span><span style="font-family: Times New Roman;">___25___</span><span style="font-family: Times New Roman;"> responsibility to find books, magazines, and articles in the library. Professors do not have the time to explain how a university library works. Professors will help students who need it, but ___26___ that their students should not be too dependent on them. In the United States professors have many other duties </span><span style="font-family: Times New Roman;">___27___</span><span style="font-family: Times New Roman;"> teaching, such as administrative or research work. </span><span style="font-family: Times New Roman;">___28___</span><span style="font-family: Times New Roman;">, the time that a professor can spend with a student outside of class is ___29___. If a student has problems with classroom work, the student should either ___30___ a professor during office hours or make an appointment.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        91、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、poor</p> <p></p>
+                            <p>B、ideal    </p> <p></p>
+                            <p>C、average   </p> <p></p>
+                            <p>D、disappointed  </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】根据句意，应选B,理想的学生应是为学习而学习的。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        92、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、fun    </p> <p></p>
+                            <p>B、work    </p> <p></p>
+                            <p>C、learning   </p> <p></p>
+                            <p>D、prize    </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】根据上下文， “for the sake of learning” 更合适。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        93、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、by     </p> <p></p>
+                            <p>B、in      </p> <p></p>
+                            <p>C、for        </p> <p></p>
+                            <p>D、with   </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】固定搭配。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        94、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、criticized     </p> <p></p>
+                            <p>B、innocent    </p> <p></p>
+                            <p>C、responsible   </p> <p></p>
+                            <p>D、dismissed   </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】be responsible for 是固定词组。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        95、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、student’s     </p> <p></p>
+                            <p>B、professor’s   </p> <p></p>
+                            <p>C、assistant’s   </p> <p></p>
+                            <p>D、librarian’s   </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】根据上下文，应选A，是学生在图书馆查找资料。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        96、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、hate        </p> <p></p>
+                            <p>B、dislike       </p> <p></p>
+                            <p>C、like    </p> <p></p>
+                            <p>D、prefer   </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】固定搭配，prefer that …should… 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        97、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、but        </p> <p></p>
+                            <p>B、except        </p> <p></p>
+                            <p>C、with        </p> <p></p>
+                            <p>D、besides  </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】根据句意，教授们除了教学之外，还有其他工作，因此需选择D。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        98、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、However   </p> <p></p>
+                            <p>B、Therefore     </p> <p></p>
+                            <p>C、Furthermore  </p> <p></p>
+                            <p>D、Nevertheless </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】根据上下文，此处是因果关系，因此用B “Therefore”。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        99、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、plentiful   </p> <p></p>
+                            <p>B、limited        </p> <p></p>
+                            <p>C、irregular     </p> <p></p>
+                            <p>D、flexible  </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】此句话的意思是教授们花在每一个学生身上的时间是有限的，因此选择B。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        100、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、get       </p> <p></p>
+                            <p>B、annoy        </p> <p></p>
+                            <p>C、approach     </p> <p></p>
+                            <p>D、attach </p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】approach此处的意思是“go and ask”,　学生有问题的时候可在教授的工作时间内去问教授。其他三个选项意思不符合。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Many people would agree that stress is a major problem in modern life. It is certainly true that worry and quarrel can cause all kinds of illnesses, <span>___21___ </span>backache to severe headaches, or even more serious complaints such as high blood pressure.</p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">    <span>   </span>Many of us think of stress as something that other people <span>___22___ </span>on us. We often complain about how other people put us under pressure. But we should try not to let such pressure affect us. We should not forget that we are largely <span>___23___ </span>for some of the stress ourselves. We sometimes take___24___ more work than our bodies and our minds can handle. We should learn to accept our limitations. We should be aware of <span>___25___ </span>things are really important and which are not.</p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        101、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、impose         </p> <p></p>
+                            <p>B、responsible         </p> <p></p>
+                            <p>C、which        </p> <p></p>
+                            <p>D、from         </p> <p></p>
+                            <p>E、on</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查介词短语。from …to…“从……到……”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        102、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、impose         </p> <p></p>
+                            <p>B、responsible         </p> <p></p>
+                            <p>C、which        </p> <p></p>
+                            <p>D、from         </p> <p></p>
+                            <p>E、on</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查动词词组。to impose sth. on sb.“把令人不快之物硬塞给某人或者强加给某人”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        103、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、impose         </p> <p></p>
+                            <p>B、responsible         </p> <p></p>
+                            <p>C、which        </p> <p></p>
+                            <p>D、from         </p> <p></p>
+                            <p>E、on</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查形容词词组。be responsible for sb./sth.“对……负责”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        104、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、impose         </p> <p></p>
+                            <p>B、responsible         </p> <p></p>
+                            <p>C、which        </p> <p></p>
+                            <p>D、from         </p> <p></p>
+                            <p>E、on</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查动词词组。to take on“承担”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        105、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、impose         </p> <p></p>
+                            <p>B、responsible         </p> <p></p>
+                            <p>C、which        </p> <p></p>
+                            <p>D、from         </p> <p></p>
+                            <p>E、on</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查连接代词作定语。be aware of +宾语从句。本句意是：我们应该意识到哪些事情真正重要及哪些事情不重要。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Each morning, millions of us turn on our radios and televisions for the weather forecast. Do the cloudy skies mean rain? Will rising temperatures bring a <span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___21___ </span>to melt snow and ice? Once we hear the forecast, we decide what clothes to wear and <span>___22___ </span>to carry an umbrella or not.</p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>___23___</span>, though, weather forecasts are <span>___24___ </span>incorrect. Yes, though the accuracy of forecasts has improved <span>___25___ </span>in recent years, predicting the weather is a fascinating mixture of art and science that is far from <span>___26___</span><span>. What is involved in predicting the weather, and how reliable are weather forecasts?</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Today weathermen have some advanced tools <span>___27___</span>, the most basic of which measure air pressure, temperature, humidity, and wind.</p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">Predicting the weather, however, is not all hard science. The computers can only give some descriptions of the behavior of the atmosphere. Furthermore, even an accurate forecast for a large area may not take </span><span>___28___ </span>the effect of local area on the weather. So some <span>___29___ </span>of art is also necessary. Here is where a weather forecaster comes in. He uses his experience and judgment to determine what value to <span>___30___ </span>on the data he receives. This allows him to make a more accurate forecast.</p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        106、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、climate</p> <p></p>
+                            <p>B、spell</p> <p></p>
+                            <p>C、term</p> <p></p>
+                            <p>D、vacation</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】该句意为：温度升高是否会带来积雪和冰的融化？spell作名词意思为：一段时间。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        107、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、whether</p> <p></p>
+                            <p>B、what</p> <p></p>
+                            <p>C、 if</p> <p></p>
+                            <p>D、how</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。 【解析】该题考点为whether引导的宾语从句。该从句的意思是：是否带伞。if也有是否之意，也可引导宾语从句，但后面不可接or not。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        108、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、In no time</p> <p></p>
+                            <p>B、For the first time</p> <p></p>
+                            <p>C、From time to time</p> <p></p>
+                            <p>D、At all times</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】该句意为：有时天气预报也会明显地不准确。From time to time：有时；In no time：立即；For the first time：首次；At all times：总是。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        109、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、objectively</p> <p></p>
+                            <p>B、obviously</p> <p></p>
+                            <p>C、occasionally</p> <p></p>
+                            <p>D、ordinarily</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】该句意思见上题。objectively：客观地；occasionally：偶尔，但和句首的from time to time 重复；ordinarily：普通地。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        110、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、plentifully</p> <p></p>
+                            <p>B、boldly</p> <p></p>
+                            <p>C、repeatedly</p> <p></p>
+                            <p>D、dramatically</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】该句意为： 虽然天气预报的准确性在近年来已经有了极大的提高。dramatically：极大地；plentifully：大量地；boldly：大胆地；repeatedly：反复地。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        111、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、waterproof</p> <p></p>
+                            <p>B、foolproof</p> <p></p>
+                            <p>C、bulletproof</p> <p></p>
+                            <p>D、fireproof</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。 【解析】该句意为：天气预报是艺术与科学的一种令人着迷的结合，因此很难保证不出任何差错。foolproof是复合词，意为：不出毛病的。waterproof：防水的；bulletproof：防弹的；fireproof：防火的。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        112、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、out of hand</p> <p></p>
+                            <p>B、beyond their control</p> <p></p>
+                            <p>C、at their disposal</p> <p></p>
+                            <p>D、in the air</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】该句意为：现在天气预报人员有一些先进的工具供他们使用。at one’s disposal：供某人使用，处理；out of hand：失去控制；beyond their control：超出控制范围；in the air：未落实，悬而未决。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        113、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、the place of</p> <p></p>
+                            <p>B、control of</p> <p></p>
+                            <p>C、into consideration</p> <p></p>
+                            <p>D、care of</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。 【解析】该句意为：此外，即使是对一个大的地区的精确的预报也可能考虑不到一些局部地区的天气情况。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        114、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、extent</p> <p></p>
+                            <p>B、case</p> <p></p>
+                            <p>C、bit</p> <p></p>
+                            <p>D、degree</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】该句意为：所以需要某种程度的艺术。degree这里是“程度”的意思。extent指“广泛的程度、范围”等。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        115、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、evaluate</p> <p></p>
+                            <p>B、offer</p> <p></p>
+                            <p>C、add</p> <p></p>
+                            <p>D、place</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。 【解析】该句意为：天气预报员利用自己的经验和判断力来决定他所得到的数据的价值。place value on：判断……的价值；evaluate 本身就是“评价”的意思，后面不能再接value。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Modern zoos are very different from zoos that were built fifty years ago. At that time, zoos were places ___21___ people could go to see animals from many parts of the world. The animals lived in cages that were made ___22___ concrete with iron bars, cages that were easy to keep clean. </span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Unfortunately for the animals, the cages were small and impossible to hide in. The zoo environment was anything ___23___<span> </span>natural. Although the zoo keepers took good care of the animals and fed them well, many of the animals did not thrive; they behaved in strange ways, and they often became ill.</p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">In modern zoos, people can see animals in more natural habitats. The animals are ___24___ more freedom in large areas so that they can live more comfortably as they would in nature. Even the appearance of zoos has changed, trees and grass grow in the cages, and streams of water flow ___25___ the areas that animals live in.</p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        116、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、of         </p> <p></p>
+                            <p>B、but         </p> <p></p>
+                            <p>C、where         </p> <p></p>
+                            <p>D、over         </p> <p></p>
+                            <p>E、given</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查定语从句。Where引导定语从句修饰places。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        117、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、of         </p> <p></p>
+                            <p>B、but         </p> <p></p>
+                            <p>C、where         </p> <p></p>
+                            <p>D、over         </p> <p></p>
+                            <p>E、given</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查动词词组。be made of “由……组成”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        118、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、of         </p> <p></p>
+                            <p>B、but         </p> <p></p>
+                            <p>C、where         </p> <p></p>
+                            <p>D、over         </p> <p></p>
+                            <p>E、given</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查固定搭配。anything but“根本不，一点儿也不”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        119、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、of         </p> <p></p>
+                            <p>B、but         </p> <p></p>
+                            <p>C、where         </p> <p></p>
+                            <p>D、over         </p> <p></p>
+                            <p>E、given</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查动宾搭配。be given more freedom“被给予更多自由”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        120、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、of         </p> <p></p>
+                            <p>B、but         </p> <p></p>
+                            <p>C、where         </p> <p></p>
+                            <p>D、over         </p> <p></p>
+                            <p>E、given</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查动词词组。to flow over“流淌过”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">Did you sleep well last night? Maybe many people will answer: No. In fact, in the world about one in three people do not have good sleep.</span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___21___ </span><span style="font-family: Times New Roman;">you say you do not have good sleep, it means waking early and not getting back to sleep, often interrupted short period of sleep, or hours of wakefulness. You </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___22___ </span><span style="font-family: Times New Roman;">get tired, worried, and anxious. Your memory and ability to remember things will be affected</span><span>.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Then what should you do when you have the trouble? Do not worry about it too much. First, let’s see whether you can sleep yourself. The ways are as follows:</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>First, </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___23___ </span><span>that your bedroom isn’t too cold or too hot. Keep it dark and quiet. </span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Second, check your lifestyle:</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Do not drink tea, coffee, cola or chocolate four hours before going to bed. Drink less liquid so that you can have no or fewer visits to the toilet.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Set your body clock well by getting up and going to bed at the fixed time every day. You</span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;"> ___24___ </span><span>take any daytime naps.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Develop a relaxing bedtime habit. Read or listen to music, then take a warm bath. If you really can not sleep, try some bread, rice or milk. They will help you fall asleep.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span>Go for a daily walk. Natural light helps you to put your body clock into correct habit, </span><span style="color: rgb(0, 0, 0); font-family: Times New Roman;">___25___ </span>do exercise outdoors if you can.</p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">Forget the worries of the day. Write down any worries, thoughts or questions before you go to bed. With these written down, you will have less to think about and your sleep will become easier.</p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        121、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、make sure</p> <p></p>
+                            <p>B、may</p> <p></p>
+                            <p>C、If         </p> <p></p>
+                            <p>D、had better</p> <p></p>
+                            <p>E、so</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查条件状语从句。句意是“如果你说没有休息好，这意味着早醒后无法再入睡，睡觉的时间断断续续，或一连数小时无法入睡。你可能总是感到疲劳、焦虑或易怒；你的记忆力和集中注意力都可能受到不良影响。”。根据上下文，只能用连词if引导条件状语从句才符合句意。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        122、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、make sure</p> <p></p>
+                            <p>B、may</p> <p></p>
+                            <p>C、If         </p> <p></p>
+                            <p>D、had better</p> <p></p>
+                            <p>E、so</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查情态动词的用法。may和might可以表示可能性和许可，但是might的语气比may较婉转，表示可能性小。但在上句话里已经提到“那就意味着....,”所以，may在此更符合句意。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        123、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、make sure</p> <p></p>
+                            <p>B、may</p> <p></p>
+                            <p>C、If         </p> <p></p>
+                            <p>D、had better</p> <p></p>
+                            <p>E、so</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查祈使句与词组辨析能力。make sure“设法确保，确定”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        124、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、make sure</p> <p></p>
+                            <p>B、may</p> <p></p>
+                            <p>C、If         </p> <p></p>
+                            <p>D、had better</p> <p></p>
+                            <p>E、so</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查固定词组辨析能力。had better (常简略为’d better) 是固定词组，had better“最好”，用于表示对别人的劝告、建议或表示一种愿望。其用法有以下几点：① had better 后跟动词原形（即不带to的不定式），构成had better do sth. 句型。② 主语不论是第几人称，句子不论是什么时态，都要用had better的形式。③ 常用的否定形式是将否定副词not直接放在had better的后面。如：You had better not miss the last bus.你最好不要错过末班公共汽车。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        125、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、make sure</p> <p></p>
+                            <p>B、may</p> <p></p>
+                            <p>C、If         </p> <p></p>
+                            <p>D、had better</p> <p></p>
+                            <p>E、so</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查句与句之间的逻辑关系。本句意是：“自然光有助于调节你的生物钟，所以如果可能的话，到户外去运动”。只有连词so“因此，所以”才符合句意。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">As the plane circled over the airport, everyone sensed that something was wrong. The plane was moving unsteadily through the air, and although the passengers had <span style="font-family: Times New Roman;">___21___</span><span style="font-family: Times New Roman;"> </span>their seat belts, they were suddenly thrown forward. At that moment, the air-hostess appeared. She looked very pale, but she was quite <span>___2</span><span>2</span>___. Speaking quickly but almost in a whisper she <span>___2</span><span>3</span>___<span style="font-family: Times New Roman;"> </span>everyone that the pilot had fainted and asked <span>___2</span><span>4</span>___<span style="font-family: Times New Roman;"> </span><span>any of the passengers knew anything about machines -- or at least how to drive a car. After a moment's hesitation, a man got up and followed the stewardess into the pilot's cabin.</span></p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;">___2<span>5</span>___<span style="font-family: Times New Roman;"> </span>the pilot aside, the man took his seat and listened carefully to the urgent instructions that were <span>___2</span><span>6</span>___ by radio from the airport below. The plane was now dangerously close to the ground, but to everyone's relief, it soon began to <span>___2</span><span>7</span>___. The man <span>___2</span><span>8</span>___<span style="font-family: Times New Roman;"> </span>circle the airport several times in order to become <span>___2</span><span>9</span>___<span style="font-family: Times New Roman;"> </span><span>the controls.</span></p><p style="margin: 0px; font-family: Times New Roman;">    Following instructions, the man guided the plane towards the airfield. It shook violently as it touched the ground and then moved rapidly across the field, but after a long <span>___</span><span>30</span>___<span style="font-family: Times New Roman;"> </span>it stopped safely. Outside, a crowd of people who had been waiting anxiously rushed forward to congratulate the pilot on a perfect landing.</p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        126、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、installed</p> <p></p>
+                            <p>B、fastened</p> <p></p>
+                            <p>C、connected</p> <p></p>
+                            <p>D、loosened</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察词义。文中的意思是乘客已经系好了安全带。install 安装；fasten 系牢；connect 连接；loosen 松开。选B。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        127、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、calm</p> <p></p>
+                            <p>B、pleasant</p> <p></p>
+                            <p>C、sad</p> <p></p>
+                            <p>D、nervous</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察逻辑关系。空姐虽然面色苍白、受到了惊吓，但她显得十分镇静，选A。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        128、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、reported</p> <p></p>
+                            <p>B、revealed</p> <p></p>
+                            <p>C、announced</p> <p></p>
+                            <p>D、informed</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】考察对语境的理解和固定搭配。空姐告诉乘客们驾驶员晕过去了，C和D两个选项都符合文意，但announce后面直接跟从句；通常用“inform + someone + 从句”的结构表示“告知某人某事”，选D。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        129、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、if</p> <p></p>
+                            <p>B、whoever</p> <p></p>
+                            <p>C、what</p> <p></p>
+                            <p>D、how</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A。【解析】考察固定搭配。“ask if + 从句” 表示“询问是否怎样”，选A。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        130、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Persuading</p> <p></p>
+                            <p>B、Lying</p> <p></p>
+                            <p>C、Moving</p> <p></p>
+                            <p>D、Bringing</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察对语境的理解。下文提到一位懂得机械的乘客坐在驾驶员的位子上，这里应当是把驾驶员从位子上移开，选C。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        131、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、sent</p> <p></p>
+                            <p>B、being sent</p> <p></p>
+                            <p>C、sending</p> <p></p>
+                            <p>D、to be sent</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察语法结构。这里使用的是被动句的进行时，结构为“be being done”，选B。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        132、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、take off</p> <p></p>
+                            <p>B、land</p> <p></p>
+                            <p>C、climb</p> <p></p>
+                            <p>D、decline</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察逻辑关系。飞机眼看就要坠落，十分危急，但是很快就开始___，大家这才松了口气。因为是转折关系，所以选择与“坠落”相反、表达“爬升”的动词，选C。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        133、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、intended to</p> <p></p>
+                            <p>B、had to</p> <p></p>
+                            <p>C、needed</p> <p></p>
+                            <p>D、used to</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B。【解析】考察对语境的理解。这道题要和第29题结合起来分析，应当先做出29题，才能判断本题的正确选项。为了更好地了解飞机的操控台，这位乘客不得不在机场上空盘旋了几圈。表示“不得不”含义的选项为B。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        134、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、aware of</p> <p></p>
+                            <p>B、sensitive to</p> <p></p>
+                            <p>C、known to	</p> <p></p>
+                            <p>D、familiar with</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D。【解析】考察词组辨析。be/become familiar with something，“熟悉某事物”，选D。 
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        135、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、flight</p> <p></p>
+                            <p>B、time</p> <p></p>
+                            <p>C、run</p> <p></p>
+                            <p>D、road</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C。【解析】考察语境理解。前文提到飞机已经落地，然后经过一段长时间的滑行，最后安稳地停了下来。run用作名词表示“（飞机，汽车等）行驶，滑行”，选C。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sQFaceInfo">
+                <p><p style="margin: 0px; text-indent: 2em; font-family: Times New Roman;"><span style="font-family: Times New Roman;">Man has always wanted to fly. Even as long as eight hundred years ago, an Englishman had tried. He made a ___21___ of wings from chicken feathers and fixed them to his shoulders. Then he jumped from a tall building. As you can imagine, he did not fly very far. ___22___</span><span style="font-family: Times New Roman;">, he fell to the ground and broke several bones. The first real attempt at flying took place in France in 1783. The two Mongolian brothers knew that hot air rose. If they could fill a large balloon ___23___ hot air, they thought it would rise into the air and fly. They were right. They made a very large hot air balloon of cloth and paper. It measured ten meters in diameter. They filled it with hot air and the balloon got two hundred meters into the air. It fell to earth about three kilometers away</span><span>.</span></p><p style="margin: 0px 0px 8px; text-indent: 2em; font-family: Times New Roman;">At the next attempt, they ___24___ for a balloon to carry passengers. We do not know what the passengers felt about the trip as they were a cock, a duck, and a sheep. But we ___25___<span> know that the trip lasted eight minutes and the animals landed safely.</span></p><p></p>
+            </div> 
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        136、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Instead    </p> <p></p>
+                            <p>B、pair         </p> <p></p>
+                            <p>C、do         </p> <p></p>
+                            <p>D、arranged         </p> <p></p>
+                            <p>E、with</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:B</p> 
+                            <p>解析:<p><span>【答案】B【解析】考查量词搭配。a pair of wings“一双翅膀”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        137、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Instead    </p> <p></p>
+                            <p>B、pair         </p> <p></p>
+                            <p>C、do         </p> <p></p>
+                            <p>D、arranged         </p> <p></p>
+                            <p>E、with</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:A</p> 
+                            <p>解析:<p><span>【答案】A【解析】考查副词instead的用法。Instead“取而代之，而不是”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        138、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Instead    </p> <p></p>
+                            <p>B、pair         </p> <p></p>
+                            <p>C、do         </p> <p></p>
+                            <p>D、arranged         </p> <p></p>
+                            <p>E、with</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:E</p> 
+                            <p>解析:<p><span>【答案】E【解析】考查动词词组。to fill sth. with sth.“把……装入……”。本句意是：“如果他们能把一个大的气球装满热气，他们认为热气球就会飞到空中”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        139、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Instead    </p> <p></p>
+                            <p>B、pair         </p> <p></p>
+                            <p>C、do         </p> <p></p>
+                            <p>D、arranged         </p> <p></p>
+                            <p>E、with</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:D</p> 
+                            <p>解析:<p><span>【答案】D【解析】考查动词词组。to arrange for sb. to do sth.“安排某人做某事”。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sectionDiv">
+                <div class="EvenStyle">
+                    <div class="childTitle">
+                        140、 
+                    </div>
+                    <div class="LineHeight">
+                            <p>A、Instead    </p> <p></p>
+                            <p>B、pair         </p> <p></p>
+                            <p>C、do         </p> <p></p>
+                            <p>D、arranged         </p> <p></p>
+                            <p>E、with</p> <p></p>
+                    </div>
+                    <div>
+                            <p>参考答案:C</p> 
+                            <p>解析:<p><span>【答案】C【解析】考查助动词do的用法。助动词do放在谓语动词前用于强调，表示肯定的陈述。
+</span></p><p></p> 
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+
+
+</body></html>
