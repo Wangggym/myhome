@@ -114,6 +114,11 @@ a {
   width: 100%;
   position: relative;
 }
+
+.sectionDiv .EvenStyle div:nth-child(3) {
+  display: none;
+}
+
 /*小题标题样式*/
 .childTitle {
   font-size: 16px;
